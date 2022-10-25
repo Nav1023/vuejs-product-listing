@@ -6,22 +6,22 @@
     />
     <section class="wrapper">
       <div class="flex-col">
-        <img class="flex-col--2" :src="product?.logoLocation" alt="" />
+        <img class="flex-col--2" :src="product.logoLocation" alt="" />
         <div class="flex-col--2">
-          <h2>{{ product?.productTitle }}</h2>
-          <p>Voucher Type: {{ product?.voucherTypeName }}</p>
-          <p>Price Min Amount: ${{ product?.variableDenomPriceMinAmount }}</p>
-          <a v-bind:href="product?.orderUrl"> Order Now </a>
+          <h2>{{ product.productTitle }}</h2>
+          <p>Voucher Type: {{ product.voucherTypeName }}</p>
+          <p>Price Min Amount: ${{ product.variableDenomPriceMinAmount }}</p>
+          <a v-bind:href="product.orderUrl"> Order Now </a>
         </div>
       </div>
 
       <div class="container">
-        <p v-html="product?.shortDescription"></p>
+        <p v-html="product.shortDescription"></p>
       </div>
 
       <h3>Detailed Description</h3>
       <div class="container">
-        <p v-html="product?.longDescription"></p>
+        <p v-html="product.longDescription"></p>
       </div>
     </section>
   </div>
